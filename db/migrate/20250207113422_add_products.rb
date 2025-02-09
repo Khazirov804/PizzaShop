@@ -19,7 +19,7 @@ class AddProducts < ActiveRecord::Migration[8.0]
       is_spicy: false,
       is_veg: false,
       is_best_offer: false,
-      path_to_image: '/images/Meat.jpg'
+      path_to_image: '/images/meat.jpg'
     )
 
     Product.create(
@@ -30,7 +30,7 @@ class AddProducts < ActiveRecord::Migration[8.0]
       is_spicy: false,
       is_veg: true,
       is_best_offer: true,
-      path_to_image: '/images/Mushroom.jpg'
+      path_to_image: '/images/mushroom.jpg'
     )
   end
 end
