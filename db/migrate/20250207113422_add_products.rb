@@ -1,7 +1,7 @@
 class AddProducts < ActiveRecord::Migration[8.0]
   def change
     Product.create(
-      title: 'Margherita',
+      title: 'Маргарита',
       description: 'Это пицца Маргарита',
       price: 350,
       size: 30,
@@ -12,7 +12,7 @@ class AddProducts < ActiveRecord::Migration[8.0]
     )
 
     Product.create(
-      title: 'Meat',
+      title: 'Мясная',
       description: 'Это Мясная пицца',
       price: 440,
       size: 35,
@@ -23,7 +23,7 @@ class AddProducts < ActiveRecord::Migration[8.0]
     )
 
     Product.create(
-      title: 'Mushroom',
+      title: 'Грибная',
       description: 'Это Грибная пицца',
       price: 400,
       size: 30,
