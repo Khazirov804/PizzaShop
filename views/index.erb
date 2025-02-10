@@ -1,37 +1,38 @@
 <h2>Добро пожаловать в пиццерию!</h2>
 
 <div class="row">
-
     <% @products.each do |p| %>
     <div class="col-md-3">
       <div>
-      <%= p.title %>
+        <%= p.title %>
       </div>
 
       <div>
-      <img src="<%= p.path_to_image %>" />
+        <img src="<%= p.path_to_image %>" alt="<%= p.title %>"/>
       </div>
 
       <div>
-      <%= p.description %>
+        <%= p.description %>
       </div>
 
       <div>
-      Размер: <%= p.size %> см
+        Размер: <%= p.size %> см
       </div>
 
       <div>
-      Цена: <%= p.price %> рублей
+        Цена: <%= p.price %> рублей
       </div>
 
       <div>
-      <button class="btn btn-sm btn-success" >Добавить в корзину</button>
+        <button class="btn btn-sm btn-success" onclick="add_to_cart()">Добавить в корзину</button>
       </div>      
     </div>
     <% end %>
-
 </div>
+
 <br>
-</br>
 
 <button class="btn btn-primary" onclick="something()">Нажми на меня!</button>
+
+<!-- Подключаем внешний JavaScript-файл -->
+<script src="/script.js"></script>
