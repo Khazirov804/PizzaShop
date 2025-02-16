@@ -23,4 +23,12 @@ loop do
 
   # Выводим текущий хеш для проверки результата
   puts hh.inspect
+
+  total = 0
+  hh.each do |key,value|
+    total = total + value
+  end
+
+  puts "Общее количество товаров в корзине: #{total}"
+  puts '=============================='
 end
